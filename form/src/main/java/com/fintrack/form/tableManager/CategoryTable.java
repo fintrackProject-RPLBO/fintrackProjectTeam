@@ -20,7 +20,7 @@ public class CategoryTable {
     }
 
     public CategoryTable() throws SQLException {
-        this.db = new DBConnection("/form/fintrackDatabase.db");
+        this.db = new DBConnection("/fintrackDatabase.db");
     }
 
     public ArrayList<Object[]> getAllDataKategori() throws SQLException {

@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class Apps extends Application {
     @Override
-    public void start(Stage stage) throws IOException, SQLException {
+    public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Apps.class.getResource("FormSet.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 

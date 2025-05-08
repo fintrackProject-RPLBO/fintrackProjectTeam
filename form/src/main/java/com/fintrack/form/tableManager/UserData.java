@@ -12,7 +12,7 @@ public class UserData {
 
     private static UserData instance;
     private UserData() throws SQLException {
-        this.db = new DBConnection("/form/fintrackDatabase.db");
+        this.db = new DBConnection("/fintrackDatabase.db");
         this.encrypt = new Encryption(10);
     }
 

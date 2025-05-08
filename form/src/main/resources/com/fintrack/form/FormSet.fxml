@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox prefHeight="473.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController">
+<HBox prefHeight="473.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController com.fintrack.form.uiController.ormSetController">
    <children>
         <GridPane prefHeight="471.0" prefWidth="530.0">
             <columnConstraints>
@@ -113,12 +113,12 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="257.0" prefWidth="136.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" onAction="#showAddCategoryForm" prefWidth="82.0" text="Add Category">
+                  <Button mnemonicParsing="false" onAction="#showAddCategoryForm" prefHeight="25.0" prefWidth="92.0" text="Add Category">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="editKategoriButton" layoutX="33.0" layoutY="41.0" mnemonicParsing="false" onAction="#addEditKategoriForm" prefWidth="82.0" text="Edit Category">
+                  <Button fx:id="editKategoriButton" layoutX="33.0" layoutY="41.0" mnemonicParsing="false" onAction="#addEditKategoriForm" prefHeight="25.0" prefWidth="92.0" text="Edit Category">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>

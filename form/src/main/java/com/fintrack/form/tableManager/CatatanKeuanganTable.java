@@ -20,7 +20,7 @@ public class CatatanKeuanganTable {
     }
 
     public CatatanKeuanganTable() throws SQLException {
-        this.db = new DBConnection("/form/fintrackDatabase.db");
+        this.db = new DBConnection("/fintrackDatabase.db");
     }
 
     public ArrayList<Object[]> getAllDataCatatan() throws SQLException {
