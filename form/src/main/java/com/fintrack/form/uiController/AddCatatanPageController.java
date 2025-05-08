@@ -63,7 +63,7 @@ public class AddCatatanPageController {
             String tanggal = date.getValue().toString();
             String deskripsi = descriptionField.getText();if (deskripsi == null){deskripsi = "";}
             boolean result = false;
-            if (catatanKeuanganTable.countingTotalSpend(kategori,tanggal)+harga > harga){
+            if (catatanKeuanganTable.countingTotalSpend(kategori,tanggal)+harga >= categoryTable.getLimitKategori(kategori)){
                 if (method.confirmationAlert("Anda Sudah Melebihi Batas Harian "+ kategori+" Klick ok untuk abaikan")){
                     result = true;
                 }

@@ -92,6 +92,16 @@ public class CategoryTable {
         }
     }
 
+    public Double getLimitKategori(String kategori) throws SQLException {
+        ArrayList<Object[]> data = getAllDataKategori();
+        for (Object[] i : data){
+            if (i[0].toString().equals(kategori)){
+                return Double.parseDouble(i[1].toString());
+            }
+        }
+        return -1.0;
+    }
+
 
 
 }

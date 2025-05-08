@@ -413,4 +413,26 @@ public class FormSetController {
     }
 
 
+    // BELUM JADII AKAN DI PERBAIKI :)
+    public void editTableViewRowColor(TableView tableView){
+//        tableView.setRowFactory(tv -> new TableRow<YourModel>() {
+//            @Override
+//            protected void updateItem(YourModel item, boolean empty) {
+//                super.updateItem(item, empty);
+//
+//                if (item == null || empty) {
+//                    setStyle("");
+//                } else {
+//                    // Example condition: make row red if value is below 0
+//                    if (item.getAmount() < 0) {
+//                        setStyle("-fx-background-color: #ffcccc;"); // light red
+//                    } else {
+//                        setStyle(""); // reset to default
+//                    }
+//                }
+//            }
+//        });
+
+    }
+
 }
