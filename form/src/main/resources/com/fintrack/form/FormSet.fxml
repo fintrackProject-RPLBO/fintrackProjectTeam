@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox prefHeight="473.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController com.fintrack.form.uiController.ormSetController">
+<HBox prefHeight="473.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController">
    <children>
         <GridPane prefHeight="471.0" prefWidth="530.0">
             <columnConstraints>
