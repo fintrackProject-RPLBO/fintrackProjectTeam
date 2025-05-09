@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.Node;
 import java.io.IOException;
@@ -50,8 +51,9 @@ public class FormSetController {
 
     @FXML private Label currentUserLabel;
 
-    @FXML
-    private VBox mainVBox;
+    @FXML private VBox mainVBox;
+
+    @FXML private Pane pane;
 
     private Node formNode; // To keep track of the form.fxml content
     private String nodePath = "";
@@ -112,6 +114,7 @@ public class FormSetController {
         String path = "/com/fintrack/form/LoginPage.fxml";
         try {
             removeForm();
+            mainVBox.setStyle("-fx-background-color: #ebe5c2;");
             formNode = FXMLLoader.load(getClass().getResource(path));
             nodePath = path;
             mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -138,6 +141,7 @@ public class FormSetController {
         String path = "/com/fintrack/form/RegisterPage.fxml";
         try {
             removeForm();
+            mainVBox.setStyle("-fx-background-color: #ebe5c2;");
             formNode = FXMLLoader.load(getClass().getResource(path));
             nodePath = path;
             mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -165,6 +169,7 @@ public class FormSetController {
         try {
             if (session.getUsername() != null){
                 removeForm();
+                mainVBox.setStyle("-fx-background-color: #ebe5c2;");
                 formNode = FXMLLoader.load(getClass().getResource(path));
                 nodePath = path;
                 mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -196,6 +201,7 @@ public class FormSetController {
             if (session.getUsername() != null){
                 if (categoryTable.getAllDataKategori().size() > 0){
                     removeForm();
+                    mainVBox.setStyle("-fx-background-color: #ebe5c2;");
                     formNode = FXMLLoader.load(getClass().getResource(path));
                     nodePath = path;
                     mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -232,6 +238,7 @@ public class FormSetController {
                 session.setClickedData(clickedData);
                 if (session.getClickedData() != null){
                     removeForm();
+                    mainVBox.setStyle("-fx-background-color: #ebe5c2;");
                     formNode = FXMLLoader.load(getClass().getResource(path));
                     nodePath = path;
                     mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -266,6 +273,7 @@ public class FormSetController {
         try {
             if (session.getUsername() != null){
                 removeForm();
+                mainVBox.setStyle("-fx-background-color: #ebe5c2;");
                 formNode = FXMLLoader.load(getClass().getResource(path));
                 nodePath = path;
                 mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -299,6 +307,7 @@ public class FormSetController {
                 session.setClickedDataKategori(clickedDataKategori);
                 if (session.getClickedDataKategori() != null){
                     removeForm();
+                    mainVBox.setStyle("-fx-background-color: #ebe5c2;");
                     formNode = FXMLLoader.load(getClass().getResource(path));
                     nodePath = path;
                     mainVBox.getChildren().add(formNode); // Add form.fxml below the button
@@ -346,6 +355,7 @@ public class FormSetController {
         if (formNode != null) {
 //            mainVBox.getChildren().remove(formNode);
             mainVBox.getChildren().clear();
+            mainVBox.setStyle("-fx-background-color: transparent;");
             formNode = null;
             nodePath = null;
         }
