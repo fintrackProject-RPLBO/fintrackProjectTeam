@@ -19,6 +19,11 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
+      <Label text="Edit Catatan" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
       <VBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
               <Label text="Kategori" />
@@ -49,10 +54,5 @@
             <Button onAction="#editCatatan" prefWidth="140" style="-fx-background-color: black; -fx-text-fill: white;" text="Simpan" />
             <Button onAction="#deleteCatatan" prefWidth="140" style="-fx-background-color: red; -fx-text-fill: white;" text="Hapus" />
         </HBox>
-      <Label text="Edit Catatan" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Label>
    </children>
 </GridPane>

@@ -1,7 +1,7 @@
 package com.fintrack.form.tableManager;
+
 import com.fintrack.form.dataBaseManager.DBConnection;
 import com.fintrack.form.dataBaseManager.Encryption;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -100,10 +100,5 @@ public class UserData {
         }
 
         return false;
-    }
-
-    public static void main(String[] args) throws SQLException {
-        UserData d = new UserData();
-        d.getUserData();
     }
 }

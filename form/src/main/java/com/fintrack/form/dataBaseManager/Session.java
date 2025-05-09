@@ -4,7 +4,6 @@ public class Session {
     String username;
     Object[] clickedData;
     Object[] clickedDataKategori;
-
     private static Session instance;
 
     // Private constructor prevents instantiation from other classes

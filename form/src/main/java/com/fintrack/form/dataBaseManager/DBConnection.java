@@ -1,6 +1,5 @@
 package com.fintrack.form.dataBaseManager;
 
-import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -194,15 +193,6 @@ public class DBConnection {
         stmt.close();
         rs.close();
         return new String[][] {col,colType};
-    }
-
-    public static void main(String[] args) throws SQLException {
-        DBConnection db = new DBConnection("/form/fintrackDatabase.db");
-        db.CUDQuery("DELETE FROM userData",new String[] {}, "TEXT TEXT");
-//        Statement stmt = db.getConn().createStatement();
-//        stmt.executeQuery("DROP TABLE kategori");
-//
-//        stmt.close();
     }
 
 }

@@ -27,8 +27,8 @@
                </font>
             </Label>
             <TextField fx:id="tfUsername" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <PasswordField fx:id="passwordFieldRe_Enter" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <PasswordField fx:id="passwordField" layoutX="10.0" layoutY="248.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <PasswordField fx:id="passwordFieldRe_Enter" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" onAction="#registerBtn" prefHeight="25.0" prefWidth="270.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
             <Label text="Username:" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
             <Label layoutX="78.0" layoutY="81.0" text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />

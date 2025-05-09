@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class AddCatatanPageController {
     UserData userData = UserData.getInstance();
@@ -41,7 +42,16 @@ public class AddCatatanPageController {
 
         priceField.textProperty().addListener((obs, oldVal, newVal) -> {
             if (!newVal.startsWith("Rp. ")) {
-                priceField.setText("Rp. " + newVal.replace("Rp. ", ""));
+                char[] str = priceField.getText().toCharArray();
+                StringBuilder temp = new StringBuilder();
+
+                for (int i = 0; i < str.length; i++){
+                    if (method.isNum(String.valueOf(str[i]))){
+                        temp.append(str[i]);
+                    }
+                }
+
+                priceField.setText("Rp. "+temp.toString());
                 }});
 
     }
@@ -53,6 +63,10 @@ public class AddCatatanPageController {
         }
         else if (priceField.getText().isEmpty()){
             method.confirmationAlert("harga tidak boleh kosong");
+        }
+        else if (method.isThereAnyLetter(priceField.getText().split(" ")[1])){
+            System.out.println(method.isThereAnyLetter(priceField.getText().split(" ")[1]));
+            method.confirmationAlert("harga tidak boleh memiliki huruf");
         }
         else if(date.getValue() == null){
             method.confirmationAlert("tanggal tidak boleh kosong");
@@ -79,14 +93,4 @@ public class AddCatatanPageController {
             formSetController.refreshTable();
         }
     }
-    Boolean isThereAnyLetter(String str){
-        for(Character i : str.toCharArray()){
-            if (!method.isAlpha(i)){
-                return false;
-            }
-        }
-        return true;
-    }
-
-
 }

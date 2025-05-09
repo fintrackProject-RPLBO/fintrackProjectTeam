@@ -2,7 +2,6 @@ package com.fintrack.form.uiController;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -51,11 +50,10 @@ public class MethodCollection {
         if (chr == null) {
             return false;
         }
-
         if (Character.isLetter(chr)){
             return true;
         }
-        return true;
+        return false;
     }
 
     public boolean isNum(String str) {
@@ -88,4 +86,14 @@ public class MethodCollection {
         System.out.println("Formatted: " + formatted);
         return formatted;
     }
+
+    Boolean isThereAnyLetter(String str){
+        for(Character i : str.toCharArray()){
+            if (isAlpha(i)){
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

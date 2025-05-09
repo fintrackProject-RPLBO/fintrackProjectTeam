@@ -3,10 +3,8 @@ package com.fintrack.form.uiController;
 import com.fintrack.form.tableManager.CategoryTable;
 import com.fintrack.form.tableManager.UserData;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
 import java.sql.SQLException;
 
 public class RegisterPageControl {
@@ -70,8 +68,6 @@ public class RegisterPageControl {
         }else{
             method.confirmationAlert("Password Re-enter tidak sama");
         }
-
-
     }
 
 

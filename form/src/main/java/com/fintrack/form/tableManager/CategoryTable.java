@@ -2,10 +2,8 @@ package com.fintrack.form.tableManager;
 
 import com.fintrack.form.dataBaseManager.DBConnection;
 import com.fintrack.form.dataBaseManager.Session;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CategoryTable {
     DBConnection db;
@@ -101,7 +99,4 @@ public class CategoryTable {
         }
         return -1.0;
     }
-
-
-
 }

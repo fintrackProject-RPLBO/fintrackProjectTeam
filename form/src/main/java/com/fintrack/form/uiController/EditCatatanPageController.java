@@ -1,6 +1,5 @@
 package com.fintrack.form.uiController;
 
-import com.fintrack.form.dataBaseManager.DBConnection;
 import com.fintrack.form.dataBaseManager.Session;
 import com.fintrack.form.tableManager.CatatanKeuanganTable;
 import com.fintrack.form.tableManager.CategoryTable;
@@ -9,7 +8,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;

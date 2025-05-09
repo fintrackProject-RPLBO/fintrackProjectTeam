@@ -17,15 +17,11 @@
       <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-
-           <Button onAction="#addKategori" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-      <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <children>
-
-                    <Label text="Daily Limit" />
-              <TextField fx:id="limit" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " />
-         </children>
-      </VBox>
+      <Label text="Tambah Kategori" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
       <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
 
@@ -33,10 +29,14 @@
               <TextField fx:id="namaKategori" prefHeight="0.0" prefWidth="303.0" />
          </children>
       </VBox>
-      <Label text="Tambah Kategori" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-         <font>
-            <Font name="System Bold" size="22.0" />
-         </font>
-      </Label>
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+
+                    <Label text="Daily Limit" />
+              <TextField fx:id="limit" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " />
+         </children>
+      </VBox>
+
+           <Button onAction="#addKategori" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
    </children>
 </GridPane>

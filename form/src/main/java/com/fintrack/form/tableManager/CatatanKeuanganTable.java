@@ -2,7 +2,6 @@ package com.fintrack.form.tableManager;
 
 import com.fintrack.form.dataBaseManager.DBConnection;
 import com.fintrack.form.dataBaseManager.Session;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -101,16 +100,5 @@ public class CatatanKeuanganTable {
         }
         System.out.println(Counter+"<---");
         return Counter;
-    }
-
-    public boolean deleteCatatan(String username,String password) throws SQLException {
-
-        return false;
-    }
-
-    public static void main(String[] args) throws SQLException {
-        CatatanKeuanganTable ckt = new CatatanKeuanganTable();
-        Session.getInstance().setUsername("Nicsap");
-        System.out.println(ckt.getAllDataCatatan().toString());
     }
 }

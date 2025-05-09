@@ -413,6 +413,7 @@ public class FormSetController {
     }
 
 
+    // MEMBUAT BARIS TABEL YANG LEBIH DARI LIMIT HARIAN AKAN BERWARNA MERAH
     // BELUM JADII AKAN DI PERBAIKI :)
     public void editTableViewRowColor(TableView tableView){
 //        tableView.setRowFactory(tv -> new TableRow<YourModel>() {
@@ -432,7 +433,6 @@ public class FormSetController {
 //                }
 //            }
 //        });
-
     }
 
 }

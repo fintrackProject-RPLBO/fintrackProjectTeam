@@ -5,8 +5,8 @@ import com.fintrack.form.tableManager.UserData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
-
 import java.sql.SQLException;
+
 
 public class DeleteAccountPageController {
     UserData userData = UserData.getInstance();

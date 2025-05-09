@@ -19,20 +19,17 @@
       <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-
-           <Button onAction="#addCatatan" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-      <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Label text="Tambah Catatan Keuangan" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-   
-                    <Label text="Description" />
-              <TextField fx:id="descriptionField" prefHeight="0.0" prefWidth="303.0" />
+              <Label text="Category" />
+              <ComboBox fx:id="category" prefHeight="0.0" prefWidth="303.0" promptText="Choose Category" />
          </children>
       </VBox>
-       <VBox prefWidth="300" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
-
-              <Label text="Date" />
-           <DatePicker fx:id="date" prefHeight="0.0" prefWidth="303.0" />
-       </VBox>
       <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
    
@@ -40,16 +37,19 @@
               <TextField fx:id="priceField" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " />
          </children>
       </VBox>
-      <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+       <VBox prefWidth="300" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+
+              <Label text="Date" />
+           <DatePicker fx:id="date" prefHeight="0.0" prefWidth="303.0" />
+       </VBox>
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
          <children>
-              <Label text="Category" />
-              <ComboBox fx:id="category" prefHeight="0.0" prefWidth="303.0" promptText="Choose Category" />
+   
+                    <Label text="Description" />
+              <TextField fx:id="descriptionField" prefHeight="0.0" prefWidth="303.0" />
          </children>
       </VBox>
-      <Label text="Tambah Catatan Keuangan" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-         <font>
-            <Font name="System Bold" size="22.0" />
-         </font>
-      </Label>
+
+           <Button onAction="#addCatatan" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
    </children>
 </GridPane>
