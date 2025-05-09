@@ -1,7 +1,7 @@
 # fintrackProjectTeam
 
 ### Cara Menggunakan:
-![image](https://github.com/user-attachments/assets/934abb09-64b5-41b9-abad-6f54cd240f6d)
+![image](https://github.com/user-attachments/assets/a85bb7c8-5667-4777-b6e5-843787ad87f1)
 
 Saat anda sudah clone atau download repo ini pergilah ke folder Apps lalu buka file fintrackApps, jika ada peringatan dari windows klick 'run' saja.
 
