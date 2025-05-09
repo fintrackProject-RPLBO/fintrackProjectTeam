@@ -44,8 +44,8 @@
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </PasswordField>
-      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="33.0" prefWidth="66.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" onAction="#cancelBtn" prefHeight="33.0" prefWidth="66.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#cancelBtn" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets left="90.0" />
          </GridPane.margin>
