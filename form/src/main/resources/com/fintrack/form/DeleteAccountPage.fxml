@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.DeleteAccountPageController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="318.0" styleClass="container" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.DeleteAccountPageController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.20001220703125" minWidth="10.0" prefWidth="159.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.59994354248045" minWidth="10.0" prefWidth="212.0" />
@@ -34,18 +34,18 @@
             <Insets left="10.0" />
          </GridPane.margin>
       </Label>
-      <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <PasswordField fx:id="passwordField" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </PasswordField>
-      <PasswordField fx:id="passwordFieldRe_enter" prefHeight="25.0" prefWidth="247.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <PasswordField fx:id="passwordFieldRe_enter" prefHeight="25.0" prefWidth="247.0" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </PasswordField>
-      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" onAction="#cancelBtn" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="25.0" prefWidth="66.0" styleClass="deleteButton" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#cancelBtn" prefHeight="25.0" prefWidth="66.0" styleClass="saveButton" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets left="90.0" />
          </GridPane.margin>

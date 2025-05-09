@@ -36,7 +36,7 @@ public class Encryption {
         return result;
     }
 
-    String decryption(String password){
+    public String decryption(String password){
         int backward = shift;
 
         if (backward > 0){

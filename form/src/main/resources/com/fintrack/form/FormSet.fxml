@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<HBox prefHeight="473.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController">
+<HBox prefHeight="473.0" prefWidth="988.0" styleClass="outerContainer" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.FormSetController">
    <children>
         <GridPane prefHeight="471.0" prefWidth="530.0">
             <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="0.0" prefWidth="6.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="318.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="191.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="292.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="236.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="22.0" />
             </columnConstraints>
             <rowConstraints>
-            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="364.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="364.0" minHeight="10.0" prefHeight="137.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="364.0" minHeight="10.0" prefHeight="142.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="364.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="364.0" minHeight="6.0" prefHeight="8.0" vgrow="SOMETIMES" />
@@ -23,7 +26,7 @@
          <children>
             <VBox prefHeight="138.0" prefWidth="551.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Label text="Tabel User">
+                  <Label styleClass="Label" text="Tabel User">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -41,7 +44,7 @@
             </VBox>
             <VBox prefHeight="177.0" prefWidth="283.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
                <children>
-                  <Label text="Tabel Catatan">
+                  <Label styleClass="Label" text="Tabel Catatan">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -61,13 +64,13 @@
                   </TableView>
                </children>
             </VBox>
-            <Label fx:id="currentUserLabel" text="Current User: " GridPane.columnIndex="1">
+            <Label fx:id="currentUserLabel" styleClass="Label" text="Current User: " GridPane.columnIndex="1">
                <font>
-                  <Font name="Consolas Bold" size="12.0" />
+                  <Font name="Consolas Bold" size="19.0" />
                </font></Label>
             <VBox layoutX="16.0" layoutY="215.0" prefHeight="177.0" prefWidth="283.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <Label text="Tabel Kategori">
+                  <Label styleClass="Label" text="Tabel Kategori">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -84,12 +87,27 @@
                   </TableView>
                </children>
             </VBox>
+            <Line endX="100.0" scaleX="8.84" startX="-100.0" GridPane.valignment="BOTTOM" />
          </children>
         </GridPane>
-        <VBox fx:id="mainVBox" prefHeight="473.0" prefWidth="373.0" />
+      <Pane prefHeight="473.0" prefWidth="341.0">
+         <children>
+              <VBox fx:id="mainVBox" layoutX="5.0" layoutY="98.0" prefHeight="278.0" prefWidth="319.0" styleClass="base">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </VBox>
+            <Label layoutY="28.0" styleClass="Label" text="Form:">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+         </children>
+      </Pane>
         <GridPane prefHeight="397.0" prefWidth="137.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="8.0" prefWidth="11.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="118.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="2.0" prefWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="162.0" vgrow="SOMETIMES" />
@@ -97,7 +115,7 @@
                 <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-            <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <children>
                   <Button mnemonicParsing="false" onAction="#addCatatanForm" prefHeight="25.0" prefWidth="82.0" text="Add catatan">
                      <VBox.margin>
@@ -111,7 +129,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="257.0" prefWidth="136.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <VBox alignment="CENTER" prefHeight="257.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Button mnemonicParsing="false" onAction="#showAddCategoryForm" prefHeight="25.0" prefWidth="92.0" text="Add Category">
                      <VBox.margin>
@@ -125,7 +143,7 @@
                   </Button>
                </children>
             </VBox>
-            <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" onAction="#ShowLoginForm" prefHeight="25.0" prefWidth="112.0" text="Login">
                      <VBox.margin>

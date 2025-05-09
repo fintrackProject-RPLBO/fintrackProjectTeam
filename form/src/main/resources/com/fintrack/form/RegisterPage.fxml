@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="251.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.RegisterPageControl">
+<VBox prefHeight="251.0" prefWidth="318.0" styleClass="container" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.RegisterPageControl">
    <children>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="345.0">
         <columnConstraints>
@@ -26,10 +26,10 @@
                   <Font name="System Bold" size="32.0" />
                </font>
             </Label>
-            <TextField fx:id="tfUsername" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <PasswordField fx:id="passwordField" layoutX="10.0" layoutY="248.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <PasswordField fx:id="passwordFieldRe_Enter" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#registerBtn" prefHeight="25.0" prefWidth="270.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="tfUsername" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordField" layoutX="10.0" layoutY="248.0" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <PasswordField fx:id="passwordFieldRe_Enter" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#registerBtn" prefHeight="25.0" prefWidth="270.0" styleClass="defaultButton" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
             <Label text="Username:" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
             <Label layoutX="78.0" layoutY="81.0" text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
             <Label layoutX="78.0" layoutY="179.0" text="Re-enter password:" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP" />

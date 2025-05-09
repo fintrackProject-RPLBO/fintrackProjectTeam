@@ -1,6 +1,7 @@
 package com.fintrack.form.uiController;
 
 import com.fintrack.form.dataBaseManager.Session;
+import com.fintrack.form.dataBaseManager.Encryption;
 import com.fintrack.form.tableManager.UserData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 public class DeleteAccountPageController {
     UserData userData = UserData.getInstance();
     Session session = Session.getInstance();
+    Encryption encryption = new Encryption(10);
     MethodCollection method = new MethodCollection();
 
     @FXML private PasswordField passwordField;
@@ -38,21 +40,30 @@ public class DeleteAccountPageController {
             String username = session.getUsername();
             String password = passwordField.getText().strip();
             String rePassword = passwordFieldRe_enter.getText().strip();
+
+            String userPassword = encryption.decryption(userData.getUserPassword(username));
+
             if (password.isEmpty() || rePassword.isEmpty()){
                 method.confirmationAlert("password tidak boleh kosong");
             }else{
-                if (password.equals(rePassword)){
+                if (password.equals(rePassword) && password.equals(userPassword)){
                     if (method.confirmationAlert("Are you sure?")){
                         formSetController.logoutBtn();
                         userData.deleteAccount(username,password);
                         formSetController.addingUserDataToTable();
+                    }else{
+                        method.confirmationAlert("Delete akun dibatalkan");
                     }
+                }else{
+                    method.confirmationAlert("Password Salah!");
                 }
             }
         }else{
             method.confirmationAlert("anda Belum Login!");
         }
     }
+
+
 
     @FXML
     void cancelBtn(){

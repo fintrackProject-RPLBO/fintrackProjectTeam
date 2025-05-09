@@ -101,4 +101,16 @@ public class UserData {
 
         return false;
     }
+
+    public String getUserPassword(String user) throws SQLException {
+        ArrayList<Object[]> data = getAllData();
+
+        for (Object[] i : data){
+            if(i[0].toString().toLowerCase().equals(user.toLowerCase())){
+                return i[1].toString();
+            }
+        }
+
+        return  "";
+    }
 }

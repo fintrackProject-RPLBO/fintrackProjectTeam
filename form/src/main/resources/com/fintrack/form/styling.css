@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: #34495E;
+}
+.saveButton {
+    -fx-background-color: #0f0f0f;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.Label{
+    -fx-text-fill: #333333;
+}
+.deleteButton {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.defaultButton {
+    -fx-background-color: #504b38;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.container{
+    -fx-background-color: #ebe5c2;
+}
+.base {
+    -fx-background-color: #f8f3d9;
+}
+.outerContainer{
+    -fx-background-color:  #f8f3d9;
+}
+.textfield{
+    -fx-background-color: #f8f3d9;
+}

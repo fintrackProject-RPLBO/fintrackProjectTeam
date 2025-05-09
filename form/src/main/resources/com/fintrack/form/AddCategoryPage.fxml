@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane prefHeight="242.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.AddKategoriController">
+<GridPane prefHeight="242.0" prefWidth="322.0" styleClass="container" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.AddKategoriController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="39.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="238.0" />
@@ -26,17 +26,17 @@
          <children>
 
                     <Label text="Category Name" />
-              <TextField fx:id="namaKategori" prefHeight="0.0" prefWidth="303.0" />
+              <TextField fx:id="namaKategori" prefHeight="0.0" prefWidth="303.0" styleClass="textfield" />
          </children>
       </VBox>
       <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
 
                     <Label text="Daily Limit" />
-              <TextField fx:id="limit" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " />
+              <TextField fx:id="limit" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " styleClass="textfield" />
          </children>
       </VBox>
 
-           <Button onAction="#addKategori" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+           <Button onAction="#addKategori" prefHeight="25.0" prefWidth="257.0" styleClass="saveButton" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
    </children>
 </GridPane>

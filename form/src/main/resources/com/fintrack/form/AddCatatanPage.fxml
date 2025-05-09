@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane prefHeight="292.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.AddCatatanPageController">
+<GridPane prefHeight="292.0" prefWidth="346.0" styleClass="container" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fintrack.form.uiController.AddCatatanPageController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="9.0" prefWidth="47.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="250.0" />
@@ -27,14 +27,14 @@
       <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
               <Label text="Category" />
-              <ComboBox fx:id="category" prefHeight="0.0" prefWidth="303.0" promptText="Choose Category" />
+              <ComboBox fx:id="category" prefHeight="0.0" prefWidth="303.0" promptText="Choose Category" styleClass="textfield" />
          </children>
       </VBox>
       <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
    
                     <Label text="Price" />
-              <TextField fx:id="priceField" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " />
+              <TextField fx:id="priceField" prefHeight="0.0" prefWidth="303.0" promptText="Rp. " styleClass="textfield" />
          </children>
       </VBox>
        <VBox prefWidth="300" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
@@ -46,10 +46,10 @@
          <children>
    
                     <Label text="Description" />
-              <TextField fx:id="descriptionField" prefHeight="0.0" prefWidth="303.0" />
+              <TextField fx:id="descriptionField" prefHeight="0.0" prefWidth="303.0" styleClass="textfield" />
          </children>
       </VBox>
 
-           <Button onAction="#addCatatan" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+           <Button onAction="#addCatatan" prefHeight="25.0" prefWidth="299.0" styleClass="saveButton" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
    </children>
 </GridPane>
