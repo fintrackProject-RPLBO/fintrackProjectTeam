@@ -90,6 +90,12 @@ public class CatatanKeuanganTable {
         }
     }
 
+    public boolean clearCatatan() throws SQLException {
+        String user = session.getUsername();
+        db.CUDQuery("DELETE FROM catatanKeuangan WHERE user = ?", new String[] {user}, "TEXT ");
+        return true;
+    }
+
     public Double countingTotalSpend(String kategori, String date) throws SQLException {
         ArrayList<Object[]> data = getAllDataCatatan();
         double Counter = 0.0;

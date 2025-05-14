@@ -53,6 +53,7 @@ public class LoginPageController {
             session.setUsername(username);
             formSetController.setCurrentUserLabel("Current User: "+session.getUsername());
             formSetController.refreshTable();
+            formSetController.removeForm();
         }
         else if(userdata.login(username,password) == 1){
             method.confirmationAlert("password salah!");

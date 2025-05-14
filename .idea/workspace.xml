@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfe90c2-78f3-45b6-aa27-0a4adc3b5c53" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Apps/fintrackApp.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/fintrackApp.lnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/fintrackDatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/form/fintrackDatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/tableManager/CatatanKeuanganTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/tableManager/CatatanKeuanganTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/tableManager/CategoryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/tableManager/CategoryTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/AddCatatanPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/AddCatatanPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/DeleteAccountPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/DeleteAccountPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/FormSetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/FormSetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/MethodCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/form/src/main/java/com/fintrack/form/uiController/MethodCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +32,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/education/college/semester 4/RPLBO/Fintrack/fintrackProject/FormSet",
+    "last_opened_file_path": "D:/education/college/semester 4/RPLBO/TeamFintrack/fintrackProjectTeam",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="fintrackProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="fintrackProject" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="fintrackProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="fintrackProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

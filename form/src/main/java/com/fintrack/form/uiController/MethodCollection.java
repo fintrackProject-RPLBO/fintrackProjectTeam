@@ -70,20 +70,13 @@ public class MethodCollection {
 
     public String getNowDateTime(){
         LocalDate currentDate = LocalDate.now();
-        System.out.println("Date: " + currentDate);
-
         // Current time
         LocalTime currentTime = LocalTime.now();
-        System.out.println("Time: " + currentTime);
-
         // Current date and time
         LocalDateTime currentDateTime = LocalDateTime.now();
-        System.out.println("DateTime: " + currentDateTime);
-
         // Formatted date and time
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formatted = currentDateTime.format(formatter);
-        System.out.println("Formatted: " + formatted);
         return formatted;
     }
 

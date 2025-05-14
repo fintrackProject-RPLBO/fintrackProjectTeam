@@ -90,6 +90,16 @@ public class CategoryTable {
         }
     }
 
+    public boolean clearKategori() throws SQLException {
+        String user = session.getUsername();
+//        if (user == null){return false;}
+//        else{
+        db.CUDQuery("DELETE FROM kategori WHERE user = ?", new String[] {user}, "TEXT");
+        return true;
+//        }
+
+    }
+
     public Double getLimitKategori(String kategori) throws SQLException {
         ArrayList<Object[]> data = getAllDataKategori();
         for (Object[] i : data){

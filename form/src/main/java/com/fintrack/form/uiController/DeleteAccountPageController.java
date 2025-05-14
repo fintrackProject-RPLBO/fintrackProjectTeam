@@ -2,6 +2,8 @@ package com.fintrack.form.uiController;
 
 import com.fintrack.form.dataBaseManager.Session;
 import com.fintrack.form.dataBaseManager.Encryption;
+import com.fintrack.form.tableManager.CatatanKeuanganTable;
+import com.fintrack.form.tableManager.CategoryTable;
 import com.fintrack.form.tableManager.UserData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,6 +13,8 @@ import java.sql.SQLException;
 
 public class DeleteAccountPageController {
     UserData userData = UserData.getInstance();
+    CategoryTable categoryTable = CategoryTable.getInstance();
+    CatatanKeuanganTable catatanKeuanganTable = CatatanKeuanganTable.getInstance();
     Session session = Session.getInstance();
     Encryption encryption = new Encryption(10);
     MethodCollection method = new MethodCollection();
@@ -36,7 +40,6 @@ public class DeleteAccountPageController {
     @FXML
     void deleteBtn() throws SQLException {
         if (session.getUsername() != null){
-            System.out.println(session.getUsername());
             String username = session.getUsername();
             String password = passwordField.getText().strip();
             String rePassword = passwordFieldRe_enter.getText().strip();
@@ -48,8 +51,10 @@ public class DeleteAccountPageController {
             }else{
                 if (password.equals(rePassword) && password.equals(userPassword)){
                     if (method.confirmationAlert("Are you sure?")){
-                        formSetController.logoutBtn();
+                        categoryTable.clearKategori();
+                        catatanKeuanganTable.clearCatatan();
                         userData.deleteAccount(username,password);
+                        formSetController.logoutBtn();
                         formSetController.addingUserDataToTable();
                     }else{
                         method.confirmationAlert("Delete akun dibatalkan");

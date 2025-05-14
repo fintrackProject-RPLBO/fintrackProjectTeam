@@ -65,7 +65,6 @@ public class AddCatatanPageController {
             method.confirmationAlert("harga tidak boleh kosong");
         }
         else if (method.isThereAnyLetter(priceField.getText().split(" ")[1])){
-            System.out.println(method.isThereAnyLetter(priceField.getText().split(" ")[1]));
             method.confirmationAlert("harga tidak boleh memiliki huruf");
         }
         else if(date.getValue() == null){

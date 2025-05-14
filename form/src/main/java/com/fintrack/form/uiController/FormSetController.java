@@ -81,7 +81,6 @@ public class FormSetController {
                 Object[] selected = catatanTV.getSelectionModel().getSelectedItem();
                 if (selected != null) {
                     clickedData = selected;
-                    System.out.println("Selected: " + Arrays.toString(clickedData));
                 }
                 String path = "/com/fintrack/form/EditCatatanPage.fxml";
                 if (nodePath.equals(path)) {
@@ -96,7 +95,6 @@ public class FormSetController {
                 Object[] selected = kategoriTV.getSelectionModel().getSelectedItem();
                 if (selected != null) {
                     clickedDataKategori = selected;
-                    System.out.println("Selected: " + Arrays.toString(clickedDataKategori));
                 }
                 String path = "/com/fintrack/form/EditKategoriPage.fxml";
                 if (nodePath.equals(path)) {
@@ -370,7 +368,6 @@ public class FormSetController {
     public void addingUserDataToTable() throws SQLException {
         ArrayList<Object[]> rawData = UserData.getInstance().getAllData();
 
-        System.out.println(rawData);
         for (Object[] i : rawData){
             System.out.print(i[0]+" ");
             System.out.println(i[1]);
@@ -386,7 +383,6 @@ public class FormSetController {
     public void addingCategoryDataToTable() throws SQLException {
         ArrayList<Object[]> rawData = CategoryTable.getInstance().getAllDataKategori();
 
-        System.out.println(rawData);
         for (Object[] i : rawData){
             System.out.print(i[0]+"---");
             System.out.println(i[1]);
@@ -403,7 +399,6 @@ public class FormSetController {
     public void addingDataCatatanToTable() throws SQLException {
         ArrayList<Object[]> rawData = CatatanKeuanganTable.getInstance().getAllDataCatatan();
 
-        System.out.println(rawData);
         for (Object[] i : rawData){
             System.out.print(i[0]+" ");
             System.out.println(i[1]);
