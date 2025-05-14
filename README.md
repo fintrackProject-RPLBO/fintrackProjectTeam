@@ -2,7 +2,7 @@
 
 ### Cara Menggunakan:
 Saat anda sudah clone atau download repo ini pergilah ke folder Apps lalu buka file fintrackApps, jika ada peringatan dari windows klik 'more info' lalu klik 'run' saja.
-(pastikan anda memiliki java sdk 24).
+(pastikan anda memiliki java sdk 23-24).
 ![image](https://github.com/user-attachments/assets/a85bb7c8-5667-4777-b6e5-843787ad87f1)
 
 ### Tampilan Awal: 
