@@ -1,9 +1,9 @@
 # fintrackProjectTeam
 
 ### Cara Menggunakan:
-![image](https://github.com/user-attachments/assets/a85bb7c8-5667-4777-b6e5-843787ad87f1)
-
 Saat anda sudah clone atau download repo ini pergilah ke folder Apps lalu buka file fintrackApps, jika ada peringatan dari windows klick 'run' saja.
+(pastikan anda memiliki java sdk 24).
+![image](https://github.com/user-attachments/assets/a85bb7c8-5667-4777-b6e5-843787ad87f1)
 
 ### Tampilan Awal: 
 ![image](https://github.com/user-attachments/assets/4d367c65-5d42-4477-8a84-e56319d69513)
